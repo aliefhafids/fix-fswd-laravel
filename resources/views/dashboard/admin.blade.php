@@ -1,0 +1,134 @@
+@extends('dashboard.layouts.main')
+
+@section('content')
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12 grid-margin">
+                <div class="row">
+                    <div class="col-12 col-xl-8 mb-4 mb-xl-0">
+                        <h3 class="font-weight-bold">Welcome </h3>
+                        <h6 class="font-weight-normal mb-0">Dashboard Pages off Distortion web<span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card tale-bg">
+                    <div class="card-people">
+                        <img src="img/dashboard/people.jpg" alt="people">
+                        <div class="weather-info">
+                            <div class="d-flex">
+                                <div>
+                                    <h2 class="mb-0 font-weight-normal text-light"><i
+                                            class="icon-sun mr-2"></i>23<sup>C</sup></h2>
+                                </div>
+                                <div class="ml-2">
+                                    <h4 class="location font-weight-normal text-light">Malang</h4>
+                                    <h6 class="font-weight-normal text-light">East Java</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 grid-margin transparent">
+                <div class="row">
+                    <div class="col-md-6 mb-4 stretch-card transparent">
+                        <div class="card card-tale">
+                            <div class="card-body">
+                                <p class="mb-4">Today’s Incomes</p>
+                                <p class="fs-30 mb-2">4006</p>
+                                <p>10.00% (30 days)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4 stretch-card transparent">
+                        <div class="card card-dark-blue">
+                            <div class="card-body">
+                                <p class="mb-4">Total Checkout</p>
+                                <p class="fs-30 mb-2">61344</p>
+                                <p>22.00% (30 days)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+                        <div class="card card-light-blue">
+                            <div class="card-body">
+                                <p class="mb-4">Total COD</p>
+                                <p class="fs-30 mb-2">34040</p>
+                                <p>2.00% (30 days)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 stretch-card transparent">
+                        <div class="card card-light-danger">
+                            <div class="card-body">
+                                <p class="mb-4">Number of Clients</p>
+                                <p class="fs-30 mb-2">47033</p>
+                                <p>0.22% (30 days)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-title">Order Details</p>
+                        <p class="font-weight-500">The amount of income from the sale of band t-shirts available on the
+                            website.</p>
+                        <div class="d-flex flex-wrap mb-5">
+                            <div class="mr-5 mt-3">
+                                <p class="text-muted">Order value</p>
+                                <h3 class="text-primary fs-30 font-weight-medium">12.3k</h3>
+                            </div>
+                            <div class="mr-5 mt-3">
+                                <p class="text-muted">Orders</p>
+                                <h3 class="text-primary fs-30 font-weight-medium">14k</h3>
+                            </div>
+                            <div class="mr-5 mt-3">
+                                <p class="text-muted">Users</p>
+                                <h3 class="text-primary fs-30 font-weight-medium">71.56%</h3>
+                            </div>
+                            <div class="mt-3">
+                                <p class="text-muted">Downloads</p>
+                                <h3 class="text-primary fs-30 font-weight-medium">34040</h3>
+                            </div>
+                        </div>
+                        <canvas id="order-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <p class="card-title">Sales Products Report</p>
+                            <a href="#" class="text-info">View all</a>
+                        </div>
+                        <p class="font-weight-500">Total items sold, measuring how much sales have increased in each
+                            product category</p>
+                        <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
+                        <canvas id="sales-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2023 aliefhafids
+                    <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from
+                    BootstrapDash. All rights reserved.</span>
+            </div>
+        </footer>
+        <!-- partial -->
+    </div>
+    @endsection
