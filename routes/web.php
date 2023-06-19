@@ -6,6 +6,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\DashboardUserController;
+use App\Http\Controllers\DashboardStaffController;
 use App\Http\Controllers\DashboardSliderController;
 use App\Http\Controllers\DashboardProductController;
 use App\Http\Controllers\DashboardCategoryController;
@@ -49,4 +50,5 @@ Route::middleware(['auth'])->group(function(){
     Route::resource('/admin/categories', DashboardCategoryController::class)->middleware('auth');
     Route::resource('/admin/users', DashboardUserController::class)->middleware('auth');
     Route::resource('/admin/sliders', DashboardSliderController::class)->middleware('auth');
+    Route::resource('/admin/staffs', DashboardStaffController::class)->middleware('auth');
 });

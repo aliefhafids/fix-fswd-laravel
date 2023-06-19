@@ -33,6 +33,12 @@
                     <a class="nav-link" href="/about">About</a>
                 </li>
             </ul>
+            @auth
+            <form action="/logout" method="POST" class="form-inline my-2 my-lg-0">
+                @csrf
+                <button type="submit" class="btn btn-outline-danger my-2 my-sm-0" type="submit">Logout</button>
+            </form>
+            @endauth
         </div>
     </nav>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -67,7 +73,9 @@
             <div class="row justify-content-between text-center text-md-left">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
                     <h2 class="font-weight-bold">Now You Cand Find on <br>PlayStore</h2>
-                    <p class="my-4">You can find this app on your Playstroe, click on download button. and in this application many products are available in stores that can be purchased online.</p>
+                    <p class="my-4">You can find this app on your Playstroe, click on download button. and in this
+                        application many products are available in stores that can be purchased online.</p>
+                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Download</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"
                     class="col-md-6 align-self-center">
