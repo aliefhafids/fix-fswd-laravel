@@ -27,7 +27,7 @@ class DashboardCategoryController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.categories.create');
     }
 
     /**
@@ -38,7 +38,14 @@ class DashboardCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|max:255',
+            'code' => 'required',
+        ]);
+
+        Category::create($validatedData);
+
+        return redirect('/admin/categories')->with('success', 'New Category has been added!');
     }
 
     /**
@@ -81,8 +88,9 @@ class DashboardCategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Category $category)
     {
-        //
+        Category::destroy($category->id);
+        return redirect('/admin/categories')->with('success', 'Category has been deleted!');
     }
 }

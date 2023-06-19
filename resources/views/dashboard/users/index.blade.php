@@ -11,6 +11,9 @@
                         <p class="card-description">
                             Table Users data stored in the database, this data can be input via the create data form.
                         </p>
+                        <a href="/admin/users/create" class="btn btn-primary btn-icon-text">
+                            <i class="ti-file btn-icon-prepend"></i>
+                            Add User</a>
                         <div class="table-responsive">
                             <table class="table">
                                 <thead>
@@ -30,8 +33,6 @@
                                         <td>{{ $user->email }}</td>
                                         <td>{{ $user->role }}</td>
                                         <td>
-                                            <a href="/admin/users/{{ $user->id }}/edit" type="button"
-                                                class="btn btn-outline-secondary btn-sm">edit</a>
                                             <form action="/admin/users/{{ $user->id }}" method="post"
                                                 class="d-inline">
                                                 @method('delete')
