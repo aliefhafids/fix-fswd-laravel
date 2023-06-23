@@ -11,12 +11,12 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/about/style.css">
 
-    <title>Distortion | About</title>
+    <title>Motorhead | About</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="">Distortion</a>
+        <a class="navbar-brand" href="">Motorhead</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -72,18 +72,50 @@
         <div class="container my-5">
             <div class="row justify-content-between text-center text-md-left">
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
-                    <h2 class="font-weight-bold">Now You Cand Find on <br>PlayStore</h2>
-                    <p class="my-4">You can find this app on your Playstroe, click on download button. and in this
-                        application many products are available in stores that can be purchased online.</p>
-                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Download</a>
+                    <h2 class="font-weight-bold">Introduction </h2>
+                    <p class="my-4">Motorhead Club is a motorcycle community in Malang, and this Motorhead
+                        already has many partners and clients. and this web application is used to introduce motorheads
+                        in the city of Malang </p>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+                    <h2 class="font-weight-bold">Vision and Mission </h2>
+                    <p class="my-4"><b>Vision :</b> Become the largest motorbike community in Malang city and even in
+                        Indonesia, and this community can provide benefits to other people.</p>
+                    <p class="my-4"><b>Mission :</b> From the results of our community, we can offer donations from the
+                        events we hold.</p>
+                </div>
+            </div>
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+                    <p>
+                        our Galleries <br>
+                    </p>
+                    <img class="related-img" src="/img/gallery/gallery-1.jpg" alt="related-1">
+                    <img class="related-img" src="/img/gallery/gallery-2.jpg" alt="related-1">
+                    <img class="related-img" src="/img/gallery/gallery-3.jpg" alt="related-1"><br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container my-5">
+            <div class="row justify-content-between text-center text-md-left">
+                <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6">
+                    <h2 class="font-weight-bold">Get easiser with Motorhead<br> Mobile App</h2>
+                    <p class="my-4">Now the motorhead club app can be used on the playstore, 
+                        what is the design of the application? see further to visit the article.</p>
+                    <a href="#" >See More</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"
                     class="col-md-6 align-self-center">
-                    <img src="img/about-1.png" alt="Take a look inside" class="mx-auto d-block">
+                    <img src="img/feature-2.png" alt="Take a look inside" class="mx-auto d-block">
                 </div>
             </div>
         </div>
     </div>
+    
+        
+   
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
